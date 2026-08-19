@@ -14,7 +14,9 @@ spec:
   - host: localhost
     http:
       paths:
-      - backend:
+      - path: /
+        pathType: Prefix
+        backend:
           serviceName: prometheus-service
           servicePort: 8080
   tls:
