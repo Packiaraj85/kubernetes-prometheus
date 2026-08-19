@@ -27,9 +27,9 @@ spec:
             limits:
               memory: "1Gi"
               cpu: "1000m"
-          requests: 
-            memory: 500M
-            cpu: "500m"
+            requests: 
+              memory: 500M
+              cpu: "500m"
           volumeMounts:
             - name: prometheus-config-volume
               mountPath: /etc/prometheus/
